@@ -2,12 +2,17 @@ package com.riwi.WorkShop_01.infraestructure.service;
 
 import com.riwi.WorkShop_01.domain.entities.User;
 import com.riwi.WorkShop_01.domain.repositories.UserRepository;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@AllArgsConstructor
+//SWAGGER
+@Tag(name="Service's controller")
 public class UserService {
     @Autowired
     private UserRepository userRepository;
